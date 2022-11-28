@@ -19,6 +19,47 @@ namespace StackUsingLinkedListMethods
             top = newNode;  //top will start pointing to newNode.
             Console.WriteLine($"New Node {data} is added.");
         }
+        public int Peek()      //Displaying the topmost element in the stack.
+        {
+            if(top==null)
+            {
+                Console.WriteLine("List is Empty");
+                return 0;
+            }
+            else
+            {
+                Console.WriteLine("Top most element is : " + top.data);
+                return top.data;
+            }
+        }
+        public void Pop()       //removing the topmost element from the stack .
+        {
+            if (top == null)
+            {
+                Console.WriteLine("List is Empty");
+            }
+            else
+            {
+                Console.WriteLine("Removed top most element : " + Peek());
+                top = top.next;
+            }
+        }
+        public bool isEmpty()
+        {
+            if(top==null)
+            {
+                Console.WriteLine("Stack is Empty");
+                return true;
+            }
+            else
+            {
+                while(top!=null)
+                {
+                    Pop();
+                }
+                return true;
+            }
+        }
 
         public void Display()           //Display()
         {
