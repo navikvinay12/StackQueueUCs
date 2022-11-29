@@ -60,7 +60,6 @@ namespace StackUsingLinkedListMethods
                 return true;
             }
         }
-
         public void Display()           //Display()
         {
             Console.WriteLine("Displaying Nodes ");
