@@ -28,9 +28,8 @@ namespace StackUsingLinkedListMethods
                 Console.WriteLine($"{newNode.data} is inserted into Queue.");
             }
         }
-        public void Deque(int data) //UC4 Deque (Deque means removing element from 1st place in Queue)
+        public void Deque() //UC4 Deque (Deque means removing element from 1st place in Queue)
         {
-            Node newNode = new Node(data);
             if (head == null)
             {
                 Console.WriteLine("Queue is empty,Deletion is not possible");

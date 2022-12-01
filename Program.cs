@@ -42,11 +42,11 @@
                     queueObj1.Enque(30);
                     queueObj1.Enque(70);
                     queueObj1.Display();
-                    queueObj1.Deque(56);
+                    queueObj1.Deque();
                     queueObj1.Display();
-                    queueObj1.Deque(30);
+                    queueObj1.Deque();
                     queueObj1.Display();
-                    queueObj1.Deque(70);
+                    queueObj1.Deque();
                     queueObj1.Display();
                     break;
                 default:
